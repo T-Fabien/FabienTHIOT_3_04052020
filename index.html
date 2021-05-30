@@ -19,6 +19,19 @@
     <!-- <link rel="stylesheet" type="text/css" href="./css/style.min.css" /> -->
   </head>
   <body>
+    <div class="loader">
+      <div>
+        <span class="letter">o</span>
+        <span class="letter">h</span>
+        <span class="letter">m</span>
+        <span class="letter">y</span>
+        <span class="letter">f</span>
+        <span class="letter">o</span>
+        <span class="letter">o</span>
+        <span class="letter">d</span>
+      </div>
+      <div class="whirly-loader"></div>
+    </div>
     <header>
       <img
         class="header_logo"
@@ -38,7 +51,9 @@
         <p>
           Découvrez des restaurants d'exception, sélectionnés par nos soins.
         </p>
-        <button class="intro_btn btn">Explorer nos restaurants</button>
+        <button class="intro_btn btn">
+          <a href="#restaurants">Explorer nos restaurants</a>
+        </button>
       </div>
     </section>
     <section class="operation_part">
@@ -65,7 +80,7 @@
     </section>
     <section class="restaurant_part">
       <div class="restaurant_container">
-        <h2 class="restaurant_title">Restaurants</h2>
+        <h2 id="restaurants" class="restaurant_title">Restaurants</h2>
       </div>
       <div class="restaurant_grid">
         <div class="restaurant_card">
@@ -81,11 +96,11 @@
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
               </div>
-                      <div class="like">
-          <i class="far fa-heart like--empty" aria-hidden="true">
-              <i class="fas fa-heart like--full" aria-hidden="true"></i>
-          </i>
-      </div>
+              <div class="like">
+                <i class="far fa-heart like--empty" aria-hidden="true">
+                  <i class="fas fa-heart like--full" aria-hidden="true"></i>
+                </i>
+              </div>
             </div>
           </a>
         </div>
@@ -102,11 +117,11 @@
                 <h3>La note enchantée</h3>
                 <p>Charonne</p>
               </div>
-                      <div class="like">
-          <i class="far fa-heart like--empty" aria-hidden="true">
-              <i class="fas fa-heart like--full" aria-hidden="true"></i>
-          </i>
-      </div>
+              <div class="like">
+                <i class="far fa-heart like--empty" aria-hidden="true">
+                  <i class="fas fa-heart like--full" aria-hidden="true"></i>
+                </i>
+              </div>
             </div>
           </a>
         </div>
@@ -120,11 +135,11 @@
                 <h3>À la française</h3>
                 <p>Cité Rouge</p>
               </div>
-                      <div class="like">
-          <i class="far fa-heart like--empty" aria-hidden="true">
-              <i class="fas fa-heart like--full" aria-hidden="true"></i>
-          </i>
-      </div>
+              <div class="like">
+                <i class="far fa-heart like--empty" aria-hidden="true">
+                  <i class="fas fa-heart like--full" aria-hidden="true"></i>
+                </i>
+              </div>
             </div>
           </a>
         </div>
@@ -138,11 +153,11 @@
                 <h3>Le délice des sens</h3>
                 <p>Folie-Méricourt</p>
               </div>
-                      <div class="like">
-          <i class="far fa-heart like--empty" aria-hidden="true">
-              <i class="fas fa-heart like--full" aria-hidden="true"></i>
-          </i>
-      </div>
+              <div class="like">
+                <i class="far fa-heart like--empty" aria-hidden="true">
+                  <i class="fas fa-heart like--full" aria-hidden="true"></i>
+                </i>
+              </div>
             </div>
           </a>
         </div>
@@ -153,15 +168,19 @@
         <p class="footer_logo">ohmyfood</p>
         <div class="footer_content">
           <div class="footer_icons_text">
-            <i class="fas fa-utensils"></i>
-            <p>Proposer un restaurant</p>
+            <a class="footer_links" href="#">
+              <i class="fas fa-utensils"></i>
+              <p>Proposer un restaurant</p>
+            </a>
           </div>
           <div class="footer_icons_text">
-            <i class="fas fa-hands-helping"></i>
-            <p>Devenir partenaire</p>
+            <a class="footer_links" href="#">
+              <i class="fas fa-hands-helping"></i>
+              Devenir partenaire
+            </a>
           </div>
-          <p>Mentions légales</p>
-          <p>Contact</p>
+          <a class="footer_links" href="#">Mentions légales</a>
+          <a class="footer_links" href="mailto:contact@ohmyfood.com">Contact</a>
         </div>
       </div>
     </footer>
